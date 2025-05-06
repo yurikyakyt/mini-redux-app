@@ -1,0 +1,28 @@
+{
+  "name": "mini-redux-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurikyakyt/mini-redux-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yurikyakyt/mini-redux-app/issues"
+  },
+  "homepage": "https://github.com/yurikyakyt/mini-redux-app#readme",
+  "devDependencies": {
+    "eslint": "^9.26.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "prettier": "^3.5.3",
+    "vite": "^6.3.4",
+    "vite-plugin-eslint": "^1.8.1"
+  }
+}
