@@ -1,21 +1,16 @@
-import { HomePage } from './pages/home-page';
-import { Router } from './router/router';
-import { store } from './store';
+import { store } from "./store";
+import { HomePage } from "./pages/home-page";
+import { Router } from "./router/router";
 
-const app = document.createElement('div');
-app.id = 'app';
-app.style.padding = '20px';
-app.style.maxWidth = '400px';
-app.style.margin = '0 auto';
+const app = document.createElement("div");
+app.id = "app";
 document.body.appendChild(app);
 
-// Подписка на изменения хранилища
-store.subscribe(() => {
-    console.log('State changed:', store.getState());
-});
-
-const routes = {
-    '/': new HomePage(),
-};
+const homePage = new HomePage();
+const routes = { "/": homePage };
 
 new Router(routes);
+
+store.subscribe(() => {
+    homePage.render();
+});

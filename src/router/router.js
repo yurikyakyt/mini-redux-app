@@ -13,10 +13,14 @@ export class Router {
         const path = window.location.hash.slice(1) || '/';
         const page = this.routes[path];
 
+        console.log('Routing to:', path);
+        console.log('Page component:', page);
+
         if (page) {
             const app = document.getElementById('app');
             app.innerHTML = '';
-            app.appendChild(page.render());
+            const element = page.render();
+            app.appendChild(element);
         }
     }
 }
