@@ -1,4 +1,4 @@
-import { createStore } from '../core/store/create-store';
+import { createStore } from "@core";
 
 const testReducer = (state = { count: 0 }, action) => {
     if (action.type === 'INCREMENT') {

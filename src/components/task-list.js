@@ -1,4 +1,4 @@
-import { BaseComponent } from "../core/base-component";
+import { BaseComponent } from "@core";
 
 export class TaskList extends BaseComponent {
     constructor(tasks, onDelete, onEdit) {

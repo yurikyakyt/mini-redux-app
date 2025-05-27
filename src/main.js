@@ -1,16 +1,13 @@
-import { store } from "./store";
-import { HomePage } from "./pages/home-page";
-import { Router } from "./router/router";
+import { Router } from "@router";
+import { TaskController } from "@controller";
 
 const app = document.createElement("div");
 app.id = "app";
 document.body.appendChild(app);
 
-const homePage = new HomePage();
-const routes = { "/": homePage };
+const controller = new TaskController(app);
+const routes = {
+    "/": controller,
+};
 
 new Router(routes);
-
-store.subscribe(() => {
-    homePage.render();
-});

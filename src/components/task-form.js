@@ -1,4 +1,4 @@
-import { BaseComponent } from "../core/base-component";
+import { BaseComponent } from "@core";
 
 export class TaskForm extends BaseComponent {
     constructor(onSubmit, editingTask = null) {

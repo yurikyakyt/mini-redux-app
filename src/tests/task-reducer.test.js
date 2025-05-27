@@ -1,4 +1,4 @@
-import { taskReducer } from "../store/reducers/task-reducer.js";
+import { taskReducer } from "@store";
 
 describe("taskReducer", () => {
     beforeEach(() => {

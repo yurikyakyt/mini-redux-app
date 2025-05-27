@@ -1,4 +1,4 @@
-import { combineReducers } from "../core/store/combine-reducers";
+import { combineReducers } from "@core";
 
 describe("combineReducers", () => {
     const counterReducer = (state = 0, action) => {
